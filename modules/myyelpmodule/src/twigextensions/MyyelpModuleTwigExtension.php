@@ -103,7 +103,7 @@ class MyyelpModuleTwigExtension extends AbstractExtension
     public function getBusinessSearchResults($location = null)
     {
         try{
-            $apikey = "T5Yx_jdWHjNODsDw_OrlREvuEe7kAqgMaCSmgXXswnPSBPO9I8uXH0In_r6UKujO8SiJcFBZ4I7BHq7LMeldSWf8KOe-SSaDgP8bBQXDZlET823k2p0NhaqEiRjIYHYx";
+            $apikey = "API Key goes here";
             $yelpFusion = new TrialAPI\YelpClient($apikey);
             $param = array("location" => $location);
             $response = $yelpFusion->getBusinessesSearchResults($param);
